@@ -1,0 +1,1017 @@
+{
+    "feb 2026": {
+        "countries": [
+            {
+                "country": "China",
+                "count": 3570
+            },
+            {
+                "country": "United States",
+                "count": 2471
+            },
+            {
+                "country": "Singapore",
+                "count": 1677
+            },
+            {
+                "country": "Canada",
+                "count": 649
+            },
+            {
+                "country": "United Kingdom",
+                "count": 248
+            },
+            {
+                "country": "India",
+                "count": 98
+            },
+            {
+                "country": "Bangladesh",
+                "count": 97
+            },
+            {
+                "country": "Italy",
+                "count": 85
+            },
+            {
+                "country": "Germany",
+                "count": 66
+            },
+            {
+                "country": "Turkey",
+                "count": 66
+            }
+        ],
+        "referrals": [
+            {
+                "site": "onq.queensu.ca",
+                "count": 436
+            },
+            {
+                "site": "canvas.nd.edu",
+                "count": 100
+            },
+            {
+                "site": "chatgpt.com",
+                "count": 83
+            },
+            {
+                "site": "tempmit.campusdemo.net",
+                "count": 68
+            },
+            {
+                "site": "m.facebook.com",
+                "count": 49
+            },
+            {
+                "site": "ap01.alma.exlibrisgroup.com",
+                "count": 46
+            },
+            {
+                "site": "gemini.google.com",
+                "count": 46
+            },
+            {
+                "site": "vanodif.tistory.com",
+                "count": 16
+            },
+            {
+                "site": "qmplus.qmul.ac.uk",
+                "count": 12
+            },
+            {
+                "site": "lms.dist113.org",
+                "count": 0
+            }
+        ],
+
+        "pages": [
+            {
+                "page": "Home",
+                "count": 1140,
+                "type": "main page"
+            },
+            {
+                "page": "Two Roses for Richard III (Baltar; Ferreira, 2012)",
+                "count": 1099,
+                "type": "production"
+            },
+            {
+                "page": "Search: Hamlet (Edison Theatre) (Ong, 2002)",
+                "count": 297,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Yang, 2010)",
+                "count": 246,
+                "type": "production"
+            },
+            {
+                "page": "The Al-Hamlet Summit (Al-Bassam, 2004)",
+                "count": 166,
+                "type": "production"
+            },
+            {
+                "page": "Hamulaite (Lin, 1995)",
+                "count": 138,
+                "type": "production"
+            },
+            {
+                "page": "Productions",
+                "count": 127,
+                "type": "main page"
+            },
+            {
+                "page": "Plays",
+                "count": 114,
+                "type": "main page"
+            },
+            {
+                "page": "Richard III: An Arab Tragedy (Al-Bassam, 2007)",
+                "count": 87,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Kurita, 2007)",
+                "count": 78,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet",
+                "count": 78,
+                "type": "play"
+            },
+            {
+                "page": "Suzuki method",
+                "count": 76,
+                "type": "glossary"
+            },
+            {
+                "page": "Wangzi fuchou ji (The Revenge of the Prince) (Su, 1994)",
+                "count": 74,
+                "type": "production"
+            },
+            {
+                "page": "Languages",
+                "count": 72,
+                "type": "main page"
+            },
+            {
+                "page": "Distancing effect (Brechtian Verfremdungseffekt)",
+                "count": 71,
+                "type": "glossary"
+            },
+            {
+                "page": "Shakespeare in the Arab World: Introduction",
+                "count": 70,
+                "type": "region"
+            },
+            {
+                "page": "Site Guide",
+                "count": 69,
+                "type": "main page"
+            },
+            {
+                "page": "Forget Hamlet / Ophelia’s Window (Daood, 2020)",
+                "count": 66,
+                "type": "production"
+            },
+            {
+                "page": "About",
+                "count": 57,
+                "type": "main page"
+            },
+            {
+                "page": "A Midsummer Night’s Dream (Yang, 2006)",
+                "count": 57,
+                "type": "production"
+            },
+            {
+                "page": "The Tempest (Oh, 2011)",
+                "count": 57,
+                "type": "production"
+            },
+            {
+                "page": "Tibetan Romeo and Juliet (Yang, 2020)",
+                "count": 56,
+                "type": "production"
+            },
+            {
+                "page": "The Al-Hamlet Summit (English version 2002) (Al-Bassam, 2002)",
+                "count": 53,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet Q1 (Lee, 2009)",
+                "count": 50,
+                "type": "production"
+            },
+            {
+                "page": "King Lear (Tse, 2006)",
+                "count": 49,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Kishworjit, 2001)",
+                "count": 47,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Yang, 2009)",
+                "count": 46,
+                "type": "production"
+            },
+            {
+                "page": "Regions",
+                "count": 46,
+                "type": "main page"
+            },
+            {
+                "page": "Scripts",
+                "count": 46,
+                "type": "main page"
+            },
+            {
+                "page": "News",
+                "count": 45,
+                "type": "main page"
+            },
+            {
+                "page": "Essays",
+                "count": 45,
+                "type": "main page"
+            },
+            {
+                "page": "Che cosa sono le nuvole? (What are the clouds?) (Pasolini, 1968)",
+                "count": 43,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet P’urhépecha (Arvide, 1990)",
+                "count": 42,
+                "type": "production"
+            },
+            {
+                "page": "The Myth of Global Shakespeare",
+                "count": 41,
+                "type": "news/essay"
+            },
+            {
+                "page": "Romeo and Juliet",
+                "count": 37,
+                "type": "play"
+            },
+            {
+                "page": "Richard (Bayülgen, 2022)",
+                "count": 35,
+                "type": "production"
+            },
+            {
+                "page": "Bir Baba Hamlet (A Father’s Hamlet) (Eren, 2017)",
+                "count": 32,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet the Killer (Tayebi, 2024)",
+                "count": 32,
+                "type": "production"
+            },
+            {
+                "page": "Macbeth (Ninagawa, 1985)",
+                "count": 32,
+                "type": "production"
+            },
+            {
+                "page": "Li’er zaici (Lear is Here) (Wu, 2001)",
+                "count": 28,
+                "type": "production"
+            },
+            {
+                "page": "Shakespeare in the Asia: Introduction",
+                "count": 27,
+                "type": "region"
+            },
+            {
+                "page": "Dream of Hamlet (Hulagu, 2021)",
+                "count": 27,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet: The Drama of Revenge (Gade, 1920)",
+                "count": 26,
+                "type": "production"
+            },
+            {
+                "page": "Kingdom of Desire (Wu, 1986)",
+                "count": 25,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Digital Stage series) (Çı̇çek, 2021)",
+                "count": 24,
+                "type": "production"
+            },
+            {
+                "page": "Japanese",
+                "count": 24,
+                "type": "language"
+            },
+            {
+                "page": "Shakespeare in the Europe: Introduction",
+                "count": 23,
+                "type": "region"
+            },
+            {
+                "page": "Othello (Miyagi, 2005)",
+                "count": 23,
+                "type": "production"
+            },
+            {
+                "page": "King Lear",
+                "count": 16,
+                "type": "play"
+            },
+            {
+                "page": "Search Results for \"hamlet\"",
+                "count": 10,
+                "type": "search"
+            }
+        ]
+    },
+    "jun 2026": {
+        "countries": [
+            {
+                "country": "China",
+                "count": 200
+            },
+            {
+                "country": "United States",
+                "count": 688
+            },
+            {
+                "country": "Singapore",
+                "count": 2665
+            },
+            {
+                "country": "Canada",
+                "count": 76
+            },
+            {
+                "country": "United Kingdom",
+                "count": 183
+            },
+            {
+                "country": "India",
+                "count": 153
+            },
+            {
+                "country": "Brazil",
+                "count": 68
+            },
+            {
+                "country": "South Korea",
+                "count": 81
+            },
+            {
+                "country": "Germany",
+                "count": 75
+            },
+            {
+                "country": "Turkey",
+                "count": 67
+            }
+        ],
+        "referrals": [
+            {
+                "site": "youtube.com",
+                "count": 17
+            },
+            {
+                "site": "reddit.com",
+                "count": 16
+            },
+            {
+                "site": "github.com",
+                "count": 12
+            },
+            {
+                "site": "vanodif.tistory.com",
+                "count": 12
+            },
+            {
+                "site": "facebook.com",
+                "count": 11
+            },
+            {
+                "site": "moodle.uni-mainz.de",
+                "count": 11
+            },
+            {
+                "site": "cn.bing.com",
+                "count": 8
+            },
+            {
+                "site": "m.facebook.com",
+                "count": 6
+            },
+            {
+                "site": "blackboard.aber.ac.uk ",
+                "count": 1
+            },
+            {
+                "site": "chatgpt.com",
+                "count": 0
+            }
+        ],
+        "pages": [
+            {
+                "page": "Home",
+                "count": 970,
+                "type": "main page"
+            },
+            {
+                "page": "Suzuki method",
+                "count": 101,
+                "type": "glossary"
+            },
+            {
+                "page": "Plays",
+                "count": 67,
+                "type": "main page"
+            },
+            {
+                "page": "Productions",
+                "count": 66,
+                "type": "main page"
+            },
+            {
+                "page": "Makebai furen (Lady Macbeth) (Cao, 2001)",
+                "count": 46,
+                "type": "production"
+            },
+            {
+                "page": "Othello (Miyagi, 2005)",
+                "count": 45,
+                "type": "production"
+            },
+            {
+                "page": "Sen noci svatojánské (A Midsummer Night’s Dream) (Trnka, 1959)",
+                "count": 45,
+                "type": "production"
+            },
+            {
+                "page": "Distancing effect (Brechtian Verfremdungseffekt)",
+                "count": 43,
+                "type": "glossary"
+            },
+            {
+                "page": "Languages",
+                "count": 36,
+                "type": "main page"
+            },
+            {
+                "page": "Much Ado About Nothing (Branagh, 1993)",
+                "count": 35,
+                "type": "production"
+            },
+            {
+                "page": "Richard III: An Arab Tragedy (Al-Bassam, 2007)",
+                "count": 34,
+                "type": "production"
+            },
+            {
+                "page": "A Midsummer Night’s Dream (Yang, 2006)",
+                "count": 33,
+                "type": "production"
+            },
+            {
+                "page": "William Shakespeare’s Romeo + Juliet (Luhrmann, 1996)",
+                "count": 32,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet the Killer (Tayebi, 2024)",
+                "count": 31,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet",
+                "count": 29,
+                "type": "play"
+            },
+            {
+                "page": "Romeo and Juliet (Digital Stage series) (Çı̇çek, 2021)",
+                "count": 29,
+                "type": "production"
+            },
+            {
+                "page": "A Midsummer Night’s Dream (Al-Shamma, 2013)",
+                "count": 28,
+                "type": "production"
+            },
+            {
+                "page": "A Transgender Ophelia",
+                "count": 26,
+                "type": "news/essay"
+            },
+            {
+                "page": "The Al-Hamlet Summit (Al-Bassam, 2004)",
+                "count": 25,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Branagh, 1996)",
+                "count": 25,
+                "type": "production"
+            },
+            {
+                "page": "Romeo & Juliet: at the Globe Theatre (Villela, 2000)",
+                "count": 25,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Kurita, 2007)",
+                "count": 24,
+                "type": "production"
+            },
+            {
+                "page": "La tempesta (Strehler, 1977-78 and 1983-84)",
+                "count": 24,
+                "type": "production"
+            },
+            {
+                "page": "News",
+                "count": 23,
+                "type": "main page"
+            },
+            {
+                "page": "Ran (Kurosawa, 1985)",
+                "count": 23,
+                "type": "production"
+            },
+            {
+                "page": "Romeo and Juliet (Oh, 2006)",
+                "count": 23,
+                "type": "production"
+            },
+            {
+                "page": "Site Guide",
+                "count": 23,
+                "type": "main page"
+            },
+            {
+                "page": "Wayne & Shuster’s Shakespearean Slapstick (1954-1991)",
+                "count": 23,
+                "type": "production"
+            },
+            {
+                "page": "The Tale of Lear (Suzuki, 1988)",
+                "count": 22,
+                "type": "production"
+            },
+            {
+                "page": "In Othello (Abel, 2003)",
+                "count": 21,
+                "type": "production"
+            },
+            {
+                "page": "Lear (Ong, 1997)",
+                "count": 21,
+                "type": "production"
+            },
+            {
+                "page": "The Tempest (Oh, 2011)",
+                "count": 21,
+                "type": "production"
+            },
+            {
+                "page": "The Myth of Global Shakespeare",
+                "count": 20,
+                "type": "news/essay"
+            },
+            {
+                "page": "Hamlet (Digital Stage series) (Çı̇çek, 2021)",
+                "count": 20,
+                "type": "production"
+            },
+            {
+                "page": "The Al-Hamlet Summit (English version 2002) (Al-Bassam, 2002)",
+                "count": 18,
+                "type": "production"
+            },
+            {
+                "page": "Kingdom of Desire (Wu, 1986)",
+                "count": 18,
+                "type": "production"
+            },
+            {
+                "page": "Shakespeare in Polish launches",
+                "count": 12,
+                "type": "news/essay"
+            },
+            {
+                "page": "Tempest",
+                "count": 17,
+                "type": "play"
+            },
+            {
+                "page": "Prince of the Himalayas (Hu, 2006)",
+                "count": 17,
+                "type": "production"
+            },
+            {
+                "page": "Tibetan Romeo and Juliet (Yang, 2020)",
+                "count": 17,
+                "type": "production"
+            },
+            {
+                "page": "Titus (Taymor, 1999)",
+                "count": 17,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet Q1 (Lee, 2009)",
+                "count": 16,
+                "type": "production"
+            },
+            {
+                "page": "Macbeth (Goold, 2010)",
+                "count": 16,
+                "type": "production"
+            },
+            {
+                "page": "Bir Baba Hamlet (A Father’s Hamlet) (Eren, 2017)",
+                "count": 15,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet: The Drama of Revenge (Gade, 1920)",
+                "count": 15,
+                "type": "production"
+            },
+            {
+                "page": "Ham-let (Martinez Corrêa, 1993)",
+                "count": 15,
+                "type": "production"
+            },
+            {
+                "page": "Spanish",
+                "count": 13,
+                "type": "language"
+            },
+            {
+                "page": "Regions",
+                "count": 13,
+                "type": "main page"
+            },
+            {
+                "page": "Giulio Cesare (Julius Caesar) (Castellucci, 1997)",
+                "count": 12,
+                "type": "production"
+            },
+            {
+                "page": "The Hollow Crown: Henry IV, Part 1 (Eyre, 2012)",
+                "count": 12,
+                "type": "production"
+            }
+        ]
+    },
+    "jul 2026": {
+        "countries": [
+            {
+                "country": "China",
+                "count": 196
+            },
+            {
+                "country": "United States",
+                "count": 795
+            },
+            {
+                "country": "Singapore",
+                "count": 4936
+            },
+            {
+                "country": "Canada",
+                "count": 100
+            },
+            {
+                "country": "United Kingdom",
+                "count": 175
+            },
+            {
+                "country": "India",
+                "count": 228
+            },
+            {
+                "country": "Brazil",
+                "count": 354
+            },
+            {
+                "country": "Vietnam",
+                "count": 469
+            },
+            {
+                "country": "Italy",
+                "count": 88
+            },
+            {
+                "country": "Turkey",
+                "count": 95
+            }
+        ],
+        "referrals": [
+            {
+                "site": "t.co",
+                "count": 26
+            },
+            {
+                "site": "phsg.com.br",
+                "count": 25
+            },
+            {
+                "site": "reddit.com",
+                "count": 17
+            },
+            {
+                "site": "sites.google.com",
+                "count": 12
+            },
+            {
+                "site": "github.com",
+                "count": 11
+            },
+            {
+                "site": "facebook.com",
+                "count": 10
+            },
+            {
+                "site": "m.facebook.com",
+                "count": 8
+            },
+            {
+                "site": "vanodif.tistory.com",
+                "count": 8
+            },
+            {
+                "site": "youtube.com",
+                "count": 4
+            },
+            {
+                "site": "cn.bing.com",
+                "count": 2
+            }
+        ],
+        "pages": [
+            {
+                "page": "Home",
+                "count": 927,
+                "type": "main page"
+            },
+            {
+                "page": "Suzuki method",
+                "count": 83,
+                "type": "glossary"
+            },
+            {
+                "page": "Plays",
+                "count": 81,
+                "type": "main page"
+            },
+            {
+                "page": "Productions",
+                "count": 64,
+                "type": "main page"
+            },
+            {
+                "page": "Maqbool (Macbeth) (Bharadwaj, 2003)",
+                "count": 63,
+                "type": "production"
+            },
+            {
+                "page": "About",
+                "count": 58,
+                "type": "main page"
+            },
+            {
+                "page": "Un Amleto di meno (Bene, 1972)",
+                "count": 55,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Digital Stage series) (Çı̇çek, 2021)",
+                "count": 48,
+                "type": "production"
+            },
+            {
+                "page": "Sen noci svatojánské (A Midsummer Night’s Dream) (Trnka, 1959)",
+                "count": 41,
+                "type": "production"
+            },
+            {
+                "page": "Otelo da Mangueira (Herz, 2006-2007)",
+                "count": 39,
+                "type": "production"
+            },
+            {
+                "page": "Distancing effect (Brechtian Verfremdungseffekt)",
+                "count": 36,
+                "type": "glossary"
+            },
+            {
+                "page": "Languages",
+                "count": 36,
+                "type": "main page"
+            },
+            {
+                "page": "A Midsummer Night’s Dream (Yang, 2006)",
+                "count": 36,
+                "type": "production"
+            },
+            {
+                "page": "News",
+                "count": 33,
+                "type": "main page"
+            },
+            {
+                "page": "Hamlet",
+                "count": 32,
+                "type": "play"
+            },
+            {
+                "page": "New Book: Local and Global Myths in Shakespearean Performance",
+                "count": 29,
+                "type": "news/essay"
+            },
+            {
+                "page": "Ran (Kurosawa, 1985)",
+                "count": 29,
+                "type": "production"
+            },
+            {
+                "page": "Wayne & Shuster’s Shakespearean Slapstick (1954-1991)",
+                "count": 29,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet (Branagh, 1996)",
+                "count": 28,
+                "type": "production"
+            },
+            {
+                "page": "King Lear (Abdel Halim, 2002)",
+                "count": 28,
+                "type": "production"
+            },
+            {
+                "page": "Othello (Miyagi, 2005)",
+                "count": 28,
+                "type": "production"
+            },
+            {
+                "page": "William Shakespeare’s Romeo + Juliet (Luhrmann, 1996)",
+                "count": 28,
+                "type": "production"
+            },
+            {
+                "page": "New Book: Race (Routledge New Critical Idiom Series)",
+                "count": 27,
+                "type": "news/essay"
+            },
+            {
+                "page": "A Midsummer Night’s Dream (Al-Shamma, 2013)",
+                "count": 26,
+                "type": "production"
+            },
+            {
+                "page": "Romeo & Juliet: at the Globe Theatre (Villela, 2000)",
+                "count": 26,
+                "type": "production"
+            },
+            {
+                "page": "As You Like It (Branagh, 2006)",
+                "count": 25,
+                "type": "production"
+            },
+            {
+                "page": "Chimes At Midnight (Welles, 1965)",
+                "count": 24,
+                "type": "production"
+            },
+            {
+                "page": "Regions",
+                "count": 24,
+                "type": "main page"
+            },
+            {
+                "page": "Richard III: An Arab Tragedy (Al-Bassam, 2007)",
+                "count": 24,
+                "type": "production"
+            },
+            {
+                "page": "Romeo and Juliet (Oh, 2006)",
+                "count": 23,
+                "type": "production"
+            },
+            {
+                "page": "English",
+                "count": 22,
+                "type": "language"
+            },
+            {
+                "page": "Much Ado About Nothing (Branagh, 1993)",
+                "count": 22,
+                "type": "production"
+            },
+            {
+                "page": "The Tempest (Oh, 2011)",
+                "count": 21,
+                "type": "production"
+            },
+            {
+                "page": "Curse of the Golden Flower (Zhang, 2006)",
+                "count": 20,
+                "type": "production"
+            },
+            {
+                "page": "Romeo and Juliet (Digital Stage series) (Çı̇çek, 2021)",
+                "count": 20,
+                "type": "production"
+            },
+            {
+                "page": "Site Guide",
+                "count": 20,
+                "type": "main page"
+            },
+            {
+                "page": "The Tale of Lear (Suzuki, 1988)",
+                "count": 20,
+                "type": "production"
+            },
+            {
+                "page": "Karakuri Ningyo (Japanese mechanical dolls)",
+                "count": 19,
+                "type": "glossary"
+            },
+            {
+                "page": "Hamlet (Kurita, 2007)",
+                "count": 19,
+                "type": "production"
+            },
+            {
+                "page": "Prince of the Himalayas (Hu, 2006)",
+                "count": 19,
+                "type": "production"
+            },
+            {
+                "page": "Lear (Ong, 1997)",
+                "count": 18,
+                "type": "production"
+            },
+            {
+                "page": "The Myth of Global Shakespeare",
+                "count": 17,
+                "type": "news/essay"
+            },
+            {
+                "page": "Tibetan Romeo and Juliet (Yang, 2020)",
+                "count": 17,
+                "type": "production"
+            },
+            {
+                "page": "Bir Baba Hamlet (A Father’s Hamlet) (Eren, 2017)",
+                "count": 16,
+                "type": "production"
+            },
+            {
+                "page": "La tempesta (Strehler, 1977-78 and 1983-84)",
+                "count": 16,
+                "type": "production"
+            },
+            {
+                "page": "University of Laughs (Warai no daigaku) (Mamoru, 2004)",
+                "count": 16,
+                "type": "production"
+            },
+            {
+                "page": "In Othello (Abel, 2003)",
+                "count": 11,
+                "type": "production"
+            },
+            {
+                "page": "A Transgender Ophelia",
+                "count": 10,
+                "type": "news/essay"
+            },
+            {
+                "page": "Makebai furen (Lady Macbeth) (Cao, 2001)",
+                "count": 9,
+                "type": "production"
+            },
+            {
+                "page": "Hamlet the Killer (Tayebi, 2024)",
+                "count": 7,
+                "type": "production"
+            }
+        ]
+    }
+}
