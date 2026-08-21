@@ -1,6 +1,6 @@
 import {createApp} from "vue"
-import websiteData from "../data/updated-prod-table.json" with { type: "json" };
-import monsterData from "../data/monster-insights-data.json" with { type: "json" };
+import websiteData from "./updated-prod-table.json" with { type: "json" };
+import monsterData from "./data.json" with { type: "json" };
 
 const data = []
 const notFound = []
@@ -217,8 +217,13 @@ function groupByPlay(data, month){
             play = prod? prod.Play: 'Not Found'
             if (play === 'Not Found')
                 notFound.push(e)
-        } else
-            play = 'N/A';
+        } else{
+            console.log('n/a'
+            )
+            return;
+        }
+            // return;
+            // play = 'N/A';
 
         const entry = data.find(c => c.play === play)
         if(entry)
@@ -242,7 +247,8 @@ function groupByDirector(data, month){
             director = info.slice(1, comma)
 
         } else
-            director = 'N/A';
+            return;
+            // director = 'N/A';
 
         const entry = data.find(c => c.director === director)
         if(entry)
@@ -269,7 +275,8 @@ function groupByLanguage(data, month){
             if (language === 'Not Found')
                 notFound.push(e)
         } else
-            language = 'N/A';
+            return;
+            // language = 'N/A';
 
         const entry = data.find(c => c.language === language)
         if(entry)
@@ -294,7 +301,8 @@ function groupByType(data, month){
             if (type === 'Not Found')
                 notFound.push(e)
         } else
-            type = 'N/A';
+            return;
+            // type = 'N/A';
 
         const entry = data.find(c => c.type === type)
 
