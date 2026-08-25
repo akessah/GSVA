@@ -1,0 +1,38 @@
+
+<div class="toplevel-utilities">
+<div id="chartdiv" ref="chartdiv" class="utilities"><pre><code id="utilities-code" class="language-js"></code></pre></div>
+
+<div class="controls">
+    <ul class="groups">
+        <li class = "description">
+            <button class="keyword title">Description</button>
+            <p>description</p>
+
+        </li>
+        <li class = "description">
+            <button class="compare title" @click="file='compare'">Compare</button>
+            <p v-if="file=='compare'">description</p>
+
+        </li>
+        <li class = "description">
+            <button class="count title" @click="file='count'">Count</button>
+            <p v-if="file=='count'">description</p>
+
+        </li>
+        <li class = "description" >
+            <button class="crawler title" @click="file='crawler'">Crawler</button>
+            <p v-if="file=='crawler'">description</p>
+
+        </li>
+        <li class = "description">
+            <button class="scraper title" @click="file='scraper'">Scraper</button>
+            <p v-if="file=='scraper'">description</p>
+        </li>
+        <li class = "description">
+            <button class="xlsx title" @click="file='xlsx'">xlsx to json</button>
+            <p v-if="file=='xlsx'">description</p>
+        </li>
+
+    </ul>
+</div>
+</div>

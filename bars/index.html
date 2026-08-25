@@ -1,0 +1,35 @@
+
+<div class="toplevel-bars">
+<div id="chartdiv" ref="chartdiv" class="bars"></div>
+
+<div class="controls">
+    <ul class="groups">
+        <li class = "description">
+            <button class="keyword title">Description</button>
+            <p>description</p>
+
+        </li>
+        <li class = "description">
+            <button class="play title" @click="grouping='play'">Play</button>
+            <p v-if="grouping=='play'">description</p>
+
+        </li>
+        <li class = "description">
+            <button class="language title" @click="grouping='language'">Language</button>
+            <p v-if="grouping=='language'">description</p>
+
+        </li>
+        <li class = "description" >
+            <button class="director title" @click="grouping='director'">Director</button>
+            <p v-if="grouping=='director'">description</p>
+
+        </li>
+        <li class = "description">
+            <button class="type title" @click="grouping='type'">Medium</button>
+            <p v-if="grouping=='type'">description</p>
+
+        </li>
+
+    </ul>
+</div>
+</div>

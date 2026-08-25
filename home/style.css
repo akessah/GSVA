@@ -1,0 +1,30 @@
+.home-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* background-color: bisque; */
+}
+
+.home-list li{
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+    margin-right: 75px;
+    vertical-align: top;
+    /* color: black; */
+    position: relative;
+    text-decoration: none;
+    /* background-color: aquamarine; */
+}
+a{
+    text-decoration: none;
+}
+.link-title, .link-description{
+    color: black;
+}
+
+.thumbnail{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}

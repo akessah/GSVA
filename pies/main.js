@@ -1,9 +1,14 @@
-// import * as am5 from "@amcharts/amcharts5";
-// import * as am5percent from "@amcharts/amcharts5/percent.js";
 import websiteData from "../data/updated-prod-table.json" with { type: "json" };
 console.log(websiteData);
 
+export default async () => ({
+    mounted,
+  template: await fetch(new URL("./index.html", import.meta.url)).then((r) =>
+    r.text(),
+  ),
+});
 
+function mounted(){
 const formattedData = [
     {
         'region': 'Brazil',
@@ -258,3 +263,4 @@ regionChart.events.on('datavalidated', ()=>{
 
 
 regionSeries.data.setAll(formattedData);
+}

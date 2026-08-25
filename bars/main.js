@@ -1,14 +1,23 @@
 import {createApp} from "vue"
-import websiteData from "./updated-prod-table.json" with { type: "json" };
-import monsterData from "./data.json" with { type: "json" };
+import websiteData from "../data/updated-prod-table.json" with { type: "json" };
+import monsterData from "../data/monster-insights-data.json" with { type: "json" };
 
 const data = []
 const notFound = []
+group(data, 'play')
+let root
+let chart
+let legend
+let yAxis
+let xAxis
 
-const app = createApp({
-    template: "#template",
 
-    data() {
+export default async () => ({
+    mounted,
+  template: await fetch(new URL("./index.html", import.meta.url)).then((r) =>
+    r.text(),
+  ),
+  data() {
         return {
             grouping: "play",
         };
@@ -30,16 +39,15 @@ const app = createApp({
 
         },
     }
-}).mount("#app");
+});
 
 
 
 
 
+function mounted(){
 
-group(data, 'play')
-
-const root = am5.Root.new("chartdiv");
+root = am5.Root.new("chartdiv");
 
 
 const myTheme = am5.Theme.new(root);
@@ -59,7 +67,7 @@ root.setThemes([
 
 // Create chart
 // https://www.amcharts.com/docs/v5/charts/xy-chart/
-const chart = root.container.children.push(am5xy.XYChart.new(root, {
+chart = root.container.children.push(am5xy.XYChart.new(root, {
   panX: false,
   panY: false,
   wheelX: "panY",
@@ -79,7 +87,7 @@ chart.set("scrollbarY", am5.Scrollbar.new(root, {
 // Create axes
 // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
 const yRenderer = am5xy.AxisRendererY.new(root, {});
-const yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
+yAxis = chart.yAxes.push(am5xy.CategoryAxis.new(root, {
   categoryField: "month",
   renderer: yRenderer,
   tooltip: am5.Tooltip.new(root, {})
@@ -91,7 +99,7 @@ yRenderer.grid.template.setAll({
 
 yAxis.data.setAll(data);
 
-const xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
+xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
   min: 0,
   maxPrecision: 0,
   renderer: am5xy.AxisRendererX.new(root, {
@@ -102,49 +110,13 @@ const xAxis = chart.xAxes.push(am5xy.ValueAxis.new(root, {
 
 // Add legend
 // https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
-const legend = chart.children.push(am5.Legend.new(root, {
+legend = chart.children.push(am5.Legend.new(root, {
   centerX: am5.p50,
   x: am5.p50
 }));
 
 
-// Add series
-// https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-function makeSeries(name, fieldName) {
-  const series = chart.series.push(am5xy.ColumnSeries.new(root, {
-    name: name,
-    stacked: true,
-    xAxis: xAxis,
-    yAxis: yAxis,
-    baseAxis: yAxis,
-    valueXField: fieldName,
-    categoryYField: "month"
-  }));
 
-  series.columns.template.setAll({
-    tooltipText: "{name}, {categoryY}: {valueX}",
-    tooltipY: am5.percent(90)
-  });
-  series.data.setAll(data);
-
-  // Make stuff animate on load
-  // https://www.amcharts.com/docs/v5/concepts/animations/
-  series.appear();
-
-  series.bullets.push(function () {
-    return am5.Bullet.new(root, {
-      sprite: am5.Label.new(root, {
-        text: "{valueX}",
-        fill: root.interfaceColors.get("alternativeText"),
-        centerY: am5.p50,
-        centerX: am5.p50,
-        populateText: true
-      })
-    });
-  });
-
-  legend.data.push(series);
-}
 for (const play in data[0]){
     if(play !== 'month')
     makeSeries(play, play);
@@ -155,6 +127,37 @@ for (const play in data[0]){
 // https://www.amcharts.com/docs/v5/concepts/animations/
 chart.appear(1000, 100);
 
+
+
+
+// const miniData = [{
+//                 "page": "Two Roses for Richard III (Baltar; Ferreira, 2012)",
+//                 "count": 1099,
+//                 "type": "production"
+//             }]
+// const miniWebData = [{
+//         "Title": "Two Roses for Richard III",
+//         "Play": "Richard III",
+//         "Director": "Baltar, Cláudio; Ferreira, Fábio",
+//         "Year": 2012,
+//         "Company": "Companhia BufoMecânica; Royal Shakespeare Company",
+//         "Language": [
+//             "Portuguese"
+//         ],
+//         "Region": [
+//             "Brazil"
+//         ],
+//         "Country": [
+//             "United Kingdom"
+//         ],
+//         "On": "Both"
+//     },]
+
+// [{play: 'Hamlet', count: 3}, {play: 'Macbeth', count: 5}]
+// {year: 2026, Hamlet: 3, Macbeth: 5
+console.log(data)
+console.log(notFound)
+}
 
 
 function findProd(e){
@@ -317,30 +320,40 @@ function groupByType(data, month){
 
 }
 
-// const miniData = [{
-//                 "page": "Two Roses for Richard III (Baltar; Ferreira, 2012)",
-//                 "count": 1099,
-//                 "type": "production"
-//             }]
-// const miniWebData = [{
-//         "Title": "Two Roses for Richard III",
-//         "Play": "Richard III",
-//         "Director": "Baltar, Cláudio; Ferreira, Fábio",
-//         "Year": 2012,
-//         "Company": "Companhia BufoMecânica; Royal Shakespeare Company",
-//         "Language": [
-//             "Portuguese"
-//         ],
-//         "Region": [
-//             "Brazil"
-//         ],
-//         "Country": [
-//             "United Kingdom"
-//         ],
-//         "On": "Both"
-//     },]
+// Add series
+// https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+function makeSeries(name, fieldName) {
+  const series = chart.series.push(am5xy.ColumnSeries.new(root, {
+    name: name,
+    stacked: true,
+    xAxis: xAxis,
+    yAxis: yAxis,
+    baseAxis: yAxis,
+    valueXField: fieldName,
+    categoryYField: "month"
+  }));
 
-// [{play: 'Hamlet', count: 3}, {play: 'Macbeth', count: 5}]
-// {year: 2026, Hamlet: 3, Macbeth: 5
-console.log(data)
-console.log(notFound)
+  series.columns.template.setAll({
+    tooltipText: "{name}, {categoryY}: {valueX}",
+    tooltipY: am5.percent(90)
+  });
+  series.data.setAll(data);
+
+  // Make stuff animate on load
+  // https://www.amcharts.com/docs/v5/concepts/animations/
+  series.appear();
+
+  series.bullets.push(function () {
+    return am5.Bullet.new(root, {
+      sprite: am5.Label.new(root, {
+        text: "{valueX}",
+        fill: root.interfaceColors.get("alternativeText"),
+        centerY: am5.p50,
+        centerX: am5.p50,
+        populateText: true
+      })
+    });
+  });
+
+  legend.data.push(series);
+}

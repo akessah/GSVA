@@ -1,0 +1,89 @@
+.toplevel-bars, .toplevel-pies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border:solid; */
+}
+div#chartdiv.bars, div.controls, div#chartdiv.utilities{
+    display: inline-block;
+    /* flex: 1; */
+    /* width: 40%; */
+    /* border: solid; */
+    height: 500px;
+    overflow: auto;
+    /* margin: auto; */
+}
+div#chartdiv{
+    border: solid;
+    border-color: #013c06;
+    padding: 1%;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    /* margin: auto 1rem auto auto */
+    flex-grow: 7;
+}
+div.controls{
+    padding: 0 auto;
+    margin: auto auto auto 1rem;
+    flex-grow: 3;
+}
+
+.controls ul {
+    list-style: none;
+}
+
+ul.groups li{
+    background-color: #daf5e2;
+    border-radius: 6px;
+    margin: 0px auto;
+    padding: 0px auto;
+    /* border: solid; */
+    font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+    text-align: center;
+}
+
+li div{
+    padding: 1rem;
+}
+
+li div *{
+    margin: auto 0.25rem;
+}
+
+ul.groups button.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #013c06;
+    border: 1px solid #013c06;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+ul.groups button:hover, ul.groups button:active {
+    background-color: initial;
+    background-position: 0 0;
+    /* color: #5842ff; */
+    background-color: #013c06;
+    opacity: .5;
+}

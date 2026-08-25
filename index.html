@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GSVPA Tools</title>
+        <script type="importmap">
+            {
+                "imports": {
+                    "vue": "https://cdn.jsdelivr.net/npm/vue@3.5.32/dist/vue.esm-browser.js",
+                    "vue-router": "https://cdn.jsdelivr.net/npm/vue-router@5.0.4/dist/vue-router.esm-browser.prod.js"
+                }
+            }
+        </script>
+        <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+        <script src="//cdn.amcharts.com/lib/5/hierarchy.js"></script>
+        <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+        <script src="./main.js" type="module"></script>
+        <script src="assets/prism.js"></script>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./home/style.css" />
+        <link rel="stylesheet" href="./pies/style.css" />
+        <link rel="stylesheet" href="./bars/style.css" />
+        <link rel="stylesheet" href="assets/prism.css"/>
+    </head>
+    <body>
+        <div id="app">Loading...</div>
+        <template id="template">
+            <header>
+                <router-link :to="`/`"><h1>GSVPA Tools</h1></router-link>
+            </header>
+
+            <main>
+                <router-view></router-view>
+            </main>
+        </template>
+    </body>
+</html>
