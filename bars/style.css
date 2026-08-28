@@ -1,4 +1,4 @@
-.toplevel-bars, .toplevel-pies{
+.toplevel, .toplevel{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ div#chartdiv{
     border-color: #013c06;
     padding: 1%;
     margin: auto;
-    background-color: #FFFFFF;
+    background-color: #f5f2f0;
     border-radius: 6px;
     /* margin: auto 1rem auto auto */
     flex-grow: 7;

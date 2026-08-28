@@ -29,8 +29,14 @@
             <p v-if="file=='scraper'">description</p>
         </li>
         <li class = "description">
-            <button class="xlsx title" @click="file='xlsx'">xlsx to json</button>
+            <button class="xlsx title" @click="file='xlsx-to-json'">xlsx to json</button>
             <p v-if="file=='xlsx'">description</p>
+        </li>
+        <li class = "description">
+            <button class="copy title" @click="copyFile()">Copy</button>
+        </li>
+        <li class = "description">
+            <a :['href']="`/${file}.js`" :['download']="`/${file}.js`"><button class="download title" @click="">Download</button></a>
         </li>
 
     </ul>
