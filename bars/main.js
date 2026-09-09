@@ -5,11 +5,11 @@ import monsterData from "../data/monster-insights-data.json" with { type: "json"
 const data = []
 const notFound = []
 group(data, 'play')
-let root
-let chart
-let legend
-let yAxis
-let xAxis
+let root;
+let chart;
+let legend;
+let yAxis;
+let xAxis;
 
 
 export default async () => ({
@@ -356,4 +356,6 @@ function makeSeries(name, fieldName) {
   });
 
   legend.data.push(series);
+
+
 }

@@ -3,6 +3,11 @@ import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs";
 import { readFileSync, writeFileSync } from "fs";
 import axios from "axios";
 import * as cheerio from "cheerio";
+import monsterData from "../data/monster-insights-data.json" with { type: "json" };
+import promptSync from 'prompt-sync';
+
+const prompt = promptSync();
+
 
 async function extractText(pdfUrl) {
   const pdf = await pdfjsLib.getDocument(pdfUrl).promise;
@@ -117,14 +122,14 @@ async function getPage(entry, links){
 
 }
 
-// console.log((await extractText({url: '../test_report.pdf'})))
-// console.log(text)
-
-//main page
-//production
-
-
-//news/essay
-
 const results = await extractText({url: '../test_report.pdf'})
-console.log(await Promise.all(results.pages.map(async p => await getPage(p, [...results.links[3], ...results.links[4]]))))
+results.pages = await Promise.all(results.pages.map(async p => await getPage(p, [...results.links[3], ...results.links[4]])))
+
+delete results.links;
+delete results.texts;
+
+console.log(results)
+const month = prompt('Enter month year: ')
+monsterData[month] = results
+
+writeFileSync('./test-monster-insights.json', JSON.stringify(monsterData, null, 4))

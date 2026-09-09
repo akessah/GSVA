@@ -1,33 +1,42 @@
 
-<div class="toplevel-bars">
+<div class="toplevel">
 <div id="chartdiv" ref="chartdiv" class="bars"></div>
 
 <div class="controls">
     <ul class="groups">
         <li class = "description">
-            <button class="keyword title">Description</button>
-            <p>description</p>
+            <button class="title">Website Visit Bars</button>
+            <div>
+                <p>The purpose of this chart is to take a list of the top 50 pages viewed on the Global Shakespeares website and group them in various ways to facilitate the discovery of wider usage patterns amongst our visitors. Click the tabs below to group tghe page visits by play, language, director, and medium.</p>
+                <p>To hide a particular bar segment, click the segment's group in the legend.</p>
+            </div>
 
         </li>
         <li class = "description">
             <button class="play title" @click="grouping='play'">Play</button>
-            <p v-if="grouping=='play'">description</p>
+            <div v-if="grouping=='play'">
+                <p>Page visits are grouped by the Shakespeare play the production is based on. Individual play pages (ex. the page listing all the productions based on <span class='italics'>The Twelfth Night</span>) are also included in this chart.</p>
+            </div>
 
         </li>
         <li class = "description">
             <button class="language title" @click="grouping='language'">Language</button>
-            <p v-if="grouping=='language'">description</p>
-
+            <div v-if="grouping=='language'">
+                <p>Page visits are grouped by the language of the production. Inividual language pages (ex. the page listing all the productions in Arabic) are also included in this chart. Note: </p>
+            </div>
         </li>
         <li class = "description" >
             <button class="director title" @click="grouping='director'">Director</button>
-            <p v-if="grouping=='director'">description</p>
+            <div v-if="grouping=='director'">
+                <p>Page visits are grouped by the director of the production</p>
+            </div>
 
         </li>
         <li class = "description">
             <button class="type title" @click="grouping='type'">Medium</button>
-            <p v-if="grouping=='type'">description</p>
-
+            <div v-if="grouping=='type'">
+                <p>Page visits are grouped by the medium of the production (film vs stage play)</p>
+            </div>
         </li>
 
     </ul>
