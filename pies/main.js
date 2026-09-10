@@ -1,18 +1,18 @@
 import websiteData from "../data/updated-prod-table.json" with { type: "json" };
-console.log(websiteData);
 
-
-
+//chart components
 let root;
 let regionChart, regionSeries;
 let countryChart, countrySeries;
 let languageChart, languageSeries;
+
+//vue application
 export default async () => ({
     mounted,
-  template: await fetch(new URL("./index.html", import.meta.url)).then((r) =>
-    r.text(),
-  ),
-  data() {
+    template: await fetch(new URL("./index.html", import.meta.url)).then((r) =>
+        r.text(),
+    ),
+    data() {
         return {
             labels: true,
         };
@@ -24,9 +24,7 @@ export default async () => ({
             }
         }
     }
-
 });
-
 
 
 function toggleLabels(series, visible){
@@ -41,28 +39,24 @@ function toggleLabels(series, visible){
 function grow(){
     regionChart.setAll({
         width: am5.percent(22.5),
-        // radius: am5.percent(80),
     })
     countryChart.setAll({
         width: am5.percent(60)
     })
     languageChart.setAll({
         width: am5.percent(15),
-        // radius: am5.percent(50),
     })
 }
 
 function shrink(){
     regionChart.setAll({
         width: am5.percent(15),
-        // radius: am5.percent(80),
     })
     countryChart.setAll({
         width: am5.percent(40)
     })
     languageChart.setAll({
         width: am5.percent(10),
-        // radius: am5.percent(50),
     })
 }
 
@@ -138,12 +132,10 @@ function mounted(){
     regionChart = root.container.children.push(
         am5percent.PieChart.new(root, {
             layout: root.verticalLayout,
-
             width: am5.percent(15),
             radius: am5.percent(80),
             centerX: -200,
             centerY: 650
-
         })
     );
     regionSeries = regionChart.series.push(
@@ -157,19 +149,16 @@ function mounted(){
         )
     );
 
+
     //second countries chart
     countryChart = root.container.children.push(
         am5percent.PieChart.new(root, {
             layout: root.verticalLayout,
-
             centerX: -300,
             centerY: 250,
             width: am5.percent(40)
-
-
         })
     );
-
     countrySeries = countryChart.series.push(
         am5percent.PieSeries.new(
             root, {
@@ -191,7 +180,6 @@ function mounted(){
             centerY: 550
         })
     );
-
     languageSeries = languageChart.series.push(
         am5percent.PieSeries.new(
             root, {
@@ -279,18 +267,6 @@ function mounted(){
         //set data
         languageSeries.data.setAll(slice.dataItem.dataContext.subData);
         languageChart.appear();
-    }
-
-    function getNeigborColors(color){
-        /**
-         * returns 2 Colors a hue up and down from color
-         */
-        const hslColor = color.toHSL(1);
-
-        return {
-            before: am5.Color.fromHSL(((hslColor.h*360 - 60)%360)/360, hslColor.s, hslColor.l),
-            after: am5.Color.fromHSL(((hslColor.h*360 + 60)%360)/360, hslColor.s, hslColor.l)
-        };
     }
 
 

@@ -1,9 +1,9 @@
-
+//vue application
 export default async () => ({
-  template: await fetch(new URL("./index.html", import.meta.url)).then((r) =>
-    r.text(),
-  ),
-  data() {
+    template: await fetch(new URL("./index.html", import.meta.url)).then((r) =>
+        r.text(),
+    ),
+    data() {
         return {
             file: "compare",
         };
@@ -29,6 +29,7 @@ function mounted(){
     })
 }
 
+//copies file to clipboard
 function copyFile() {
   const copyText = document.getElementById("utilities-code").textContent;
   navigator.clipboard.writeText(copyText);

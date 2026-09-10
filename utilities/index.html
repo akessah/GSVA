@@ -11,8 +11,6 @@
                 <p>To download the script or copy to your clipboard, click the corresponding button at the bottom of the page.</p>
                 <p>All necessary npm installs are included at the top of the file</p>
             </div>
-
-
         </li>
         <li class = "description">
             <button class="prodTable title" @click="file='prod-table'">Prod Table</button>
@@ -21,21 +19,6 @@
                 <p>To use: download the file in the same directory as the current production table Excel sheet; run 'node prod-table.js'</p>
             </div>
         </li>
-        <!-- <li class = "description">
-            <button class="scraper title" @click="file='scraper'">Scraper</button>
-            <div v-if="file=='scraper'">
-                <p>Used to convert the table of productions on the GSVA website into a js object</p>
-                <p>To use: navigate to the table on the website and open the console; copy and paste the code into the console and press enter; copy the printed output and save to a .json file</p>
-            </div>
-        </li>
-        <li class = "description">
-            <button class="compare title" @click="file='compare'">Compare</button>
-            <div v-if="file=='compare'">
-                <p >Used to compare the output of scraper to the current production table spreadsheet and print the results to a new Excel sheet that notes whether a production was on the website, on the spreadsheet, or both</p>
-                <p>To use: download file and place in same directory as the production table and the scraper output; cd to that directory and run "node compare.js"</p>
-            </div>
-        </li> -->
-
         <li class = "description">
             <button class="count title" @click="file='count'">Count</button>
             <div v-if="file=='count'">
@@ -52,11 +35,6 @@
             </div>
 
         </li>
-
-        <!-- <li class = "description">
-            <button class="xlsx title" @click="file='xlsx-to-json'">xlsx to json</button>
-            <p v-if="file=='xlsx'">description</p>
-        </li> -->
         <li class = "description">
             <button class="copy title" @click="copyFile()">Copy</button>
         </li>
