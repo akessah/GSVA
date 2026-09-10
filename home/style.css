@@ -27,4 +27,7 @@ a{
     width: 200px;
     display: flex;
     justify-content: center;
+    background-color: #f5f2f0;
+    padding: 1rem;
+    border-radius: 10%;
 }

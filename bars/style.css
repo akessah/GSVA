@@ -1,7 +1,8 @@
 .toplevel, .toplevel{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding: 5rex;
     /* border:solid; */
 }
 div#chartdiv.bars, div#chartdiv.utilities, div.pie-container div.controls{
@@ -99,4 +100,12 @@ ul.groups button:hover, ul.groups button:active {
 }
 div#chartdiv.utilities{
     overflow: scroll;
+}
+
+p+p{
+    padding-top: 10px;
+}
+
+div#chartdiv.pies+ div.controls{
+    height: 750px;
 }
