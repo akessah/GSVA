@@ -1,3 +1,14 @@
 body{
     background-color: rgb(165, 252, 155);
 }
+
+img.icon{
+    height: 2rem;
+}
+
+a.mainpage{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    padding-left: 40px;
+}
