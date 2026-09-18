@@ -11,7 +11,8 @@ const router = createRouter({
     {path: "/", component: loadComponent("home")},
     {path: "/pies", component: loadComponent("pies")},
     {path: "/bars", component: loadComponent("bars")},
-    {path: "/utilities", component: loadComponent("utilities")}
+    {path: "/utilities", component: loadComponent("utilities")},
+    {path: "/nested-pie", component: loadComponent("nested-pie")}
   ],
 });
 

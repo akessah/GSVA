@@ -1,0 +1,25 @@
+
+<div class="toplevel">
+<div class="pie-container">
+    <div id="chartdiv" ref="chartdiv" class="pies"></div>
+</div>
+
+<div class="controls">
+    <ul class="groups">
+        <li class = "description">
+            <button class="title">Nested Region-Country-Language</button>
+            <div>
+                <p>This chart gives users a type of overview of the productions offered in the archive while allowing them to dive deeper into the ways region, country, and language interact with each other within productions.</p>
+                <p>Region is the left-most pie and broadest category. Region largely refers to the cultural traditions behind a particular production. The archive has several regional editors who provide more context on these cultural traditions and are used to define the regions used in the chart.</p>
+                <p>Country is the center and largest pie. Country refers to the location in which a production was performed in the case of a stage play or produced in the case of a film adaptation. Though the location of a performance and the cultural tradition behind it don't always correlate (think a Hindi-language play set in Mumbai but performed in London), country is oftentimes a used way to drill deeper into a production's background.</p>
+                <p>Language is the right-most and smallest pie. Language simply refers to the language used in a production. Currently, one production that utilizes multiple languages is double-counted. Again, language and performance country don't necessarily relate in the ways you would expect, but this organization still provides some intersting insights.</p>
+                <p>Clicking a slice of a broader pie will reveal the narrower pie of the correlating pie. You can also choose to show and hide the pie slice labels to make viewing easier.</p>
+                <input type="checkbox" id="labels" name="labels" checked v-model="labels"/>
+                <label for="labels">Show Labels</label>
+            </div>
+
+        </li>
+
+    </ul>
+</div>
+</div>
