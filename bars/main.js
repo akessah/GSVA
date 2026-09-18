@@ -23,6 +23,7 @@ export default async () => ({
     data() {
         return {
             grouping: "play",
+            openDescription: true
         };
     },
     watch: {

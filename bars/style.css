@@ -17,6 +17,7 @@ div#chartdiv.bars, div.controls, div#chartdiv.utilities{
     height: 500px;
 }
 
+
 div.pie-container{
     height: 750px;
 }
@@ -32,13 +33,14 @@ div#chartdiv.bars, div#chartdiv.utilities, div.pie-container{
     flex: 7;
 }
 div.controls{
-    padding: 0 auto;
-    margin: auto auto auto 1rem;
+    padding-top: 0;
+    margin: 0 auto auto 1rem;
     flex: 3;
 }
 
 .controls ul {
     list-style: none;
+    margin-top: 0;
 }
 
 ul.groups li{

@@ -6,6 +6,7 @@ export default async () => ({
     data() {
         return {
             file: "compare",
+            "openDescription": true
         };
     },
     mounted,

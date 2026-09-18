@@ -5,8 +5,8 @@
 <div class="controls">
     <ul class="groups">
         <li class = "description">
-            <button class="title">Website Visit Bars</button>
-            <div>
+            <button class="title" @click="openDescription=!openDescription">Website Visit Bars</button>
+            <div v-if="openDescription">
                 <p>The purpose of this chart is to take a list of the top 50 pages viewed on the Global Shakespeares website and group them in various ways to facilitate the discovery of wider usage patterns amongst our visitors. Click the tabs below to group tghe page visits by play, language, director, and medium.</p>
                 <p>To hide a particular bar segment, click the segment's group in the legend.</p>
             </div>

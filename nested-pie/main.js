@@ -128,7 +128,7 @@ function mounted(){
         am5themes_Animated.new(root)
     ]);
 
-    var container = root.container.children.push(
+    container = root.container.children.push(
         am5.Container.new(root, {
             width: am5.percent(65),
             height: am5.percent(65),
@@ -139,7 +139,7 @@ function mounted(){
         })
     );
 
-    var series = container.children.push(
+    series = container.children.push(
         am5hierarchy.Sunburst.new(root, {
             downDepth: 1,
             initialDepth: 1,

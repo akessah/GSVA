@@ -5,8 +5,8 @@
 <div class="controls">
     <ul class="groups">
         <li class = "description">
-            <button class="keyword title">Utilities</button>
-            <div>
+            <button class="keyword title" @click="openDescription=!openDescription">Utilities</button>
+            <div v-if="openDescription">
                 <p>These are the various scrapers, crawlers, and scripts used to build the datasets used for these charts. Each includes a preview of the script, a description of it's purpose, and instructions on how to use it.</p>
                 <p>To download the script or copy to your clipboard, click the corresponding button at the bottom of the page.</p>
                 <p>All necessary npm installs are included at the top of the file</p>
