@@ -60,7 +60,7 @@ function shrink(){
 
 function mounted(){
     const formattedData = [{
-        name: "Root",
+        name: "Globe",
         children:[
             {
                 name: 'Brazil',
@@ -146,21 +146,21 @@ function mounted(){
             valueField: "value",
             categoryField: "name",
             childDataField: "children",
-            innerRadius: am5.percent(30)
+            innerRadius: am5.percent(0) //edit to chose between circle (0) and inner ring (>0)
         })
     );
 
 
     //set colors
-    series.get('colors').set("colors", [
-        am5.color(0x2f1c0f),
-        am5.color(0xc36b54),
-        am5.color(0xfce2b3),
-        am5.color(0xe6a264),
-        am5.color(0x2f1c0f),
-        am5.color(0xc36b54),
-        am5.color(0xfce2b3),
-    ]);
+    // series.get('colors').set("colors", [
+    //     am5.color(0x2f1c0f),
+    //     am5.color(0xc36b54),
+    //     am5.color(0xfce2b3),
+    //     am5.color(0xe6a264),
+    //     am5.color(0x2f1c0f),
+    //     am5.color(0xc36b54),
+    //     am5.color(0xfce2b3),
+    // ]);
 
     series.data.setAll(formattedData);
     container.children.unshift(

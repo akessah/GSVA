@@ -111,3 +111,12 @@ p+p{
 div#chartdiv.pies+ div.controls{
     height: 750px;
 }
+
+ul.actions{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    padding: 0;
+    margin: 0;
+}

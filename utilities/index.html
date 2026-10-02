@@ -1,6 +1,17 @@
 
 <div class="toplevel">
-<div id="chartdiv" ref="chartdiv" class="utilities"><pre><code id="utilities-code" class="language-js"></code></pre></div>
+<div id="chartdiv" ref="chartdiv" class="utilities">
+    <ul class = "groups actions">
+        <li class = "description">
+            <button class="copy title" @click="copyFile()">Copy</button>
+        </li>
+        <li class = "description">
+            <a :['href']="`/${file}.js`" :['download']="`/${file}.js`"><button class="download title" @click="">Download</button></a>
+        </li>
+    </ul>
+    <pre><code id="utilities-code" class="language-js"></code></pre>
+
+</div>
 
 <div class="controls">
     <ul class="groups">
@@ -35,13 +46,8 @@
             </div>
 
         </li>
-        <li class = "description">
-            <button class="copy title" @click="copyFile()">Copy</button>
-        </li>
-        <li class = "description">
-            <a :['href']="`/${file}.js`" :['download']="`/${file}.js`"><button class="download title" @click="">Download</button></a>
-        </li>
-
     </ul>
+
+
 </div>
 </div>

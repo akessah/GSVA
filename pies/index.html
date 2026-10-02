@@ -1,6 +1,10 @@
 
 <div class="toplevel">
 <div class="pie-container">
+    <div class=".actions">
+        <input type="checkbox" id="labels" name="labels" checked v-model="labels"/>
+        <label for="labels">Show Labels</label>
+    </div>
     <div id="chartdiv" ref="chartdiv" class="pies"></div>
 </div>
 
@@ -14,8 +18,7 @@
                 <p>Country is the center and largest pie. Country refers to the location in which a production was performed in the case of a stage play or produced in the case of a film adaptation. Though the location of a performance and the cultural tradition behind it don't always correlate (think a Hindi-language play set in Mumbai but performed in London), country is oftentimes a used way to drill deeper into a production's background.</p>
                 <p>Language is the right-most and smallest pie. Language simply refers to the language used in a production. Currently, one production that utilizes multiple languages is double-counted. Again, language and performance country don't necessarily relate in the ways you would expect, but this organization still provides some intersting insights.</p>
                 <p>Clicking a slice of a broader pie will reveal the narrower pie of the correlating pie. You can also choose to show and hide the pie slice labels to make viewing easier.</p>
-                <input type="checkbox" id="labels" name="labels" checked v-model="labels"/>
-                <label for="labels">Show Labels</label>
+
             </div>
 
         </li>
